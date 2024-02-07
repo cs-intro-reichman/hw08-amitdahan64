@@ -121,7 +121,7 @@ class PlayList {
         //// replace this comment with your code
         if(i < 0 || size == maxSize-1 || i > maxSize){return;}
         tracks[i] = null;
-        for(int j = i; j < size-1; j++){
+        for(int j = i; j <= size-1; j++){
             tracks[j] = tracks[j+1];
         }
         tracks[size-1] = null;
@@ -174,8 +174,10 @@ class PlayList {
             for(int i = 0; i < other.getSize(); i++)
             {
                 tracks[size + i] = other.getTrack(i);
+                size++;
             }
-            size += other.getSize();
+            
+            
         }
     }
 
