@@ -99,7 +99,7 @@ class PlayList {
         //// replace the following statement with your code
         if(i == 0){add(track);}
         else {
-            if(i < 0 || size == maxSize-1 || i > maxSize){return false;} 
+            if(i < 0 || size == maxSize || i > maxSize){return false;} 
             else {
                 for(int j = size; j > i; j--){
 
