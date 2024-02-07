@@ -111,10 +111,11 @@ class PlayList {
                 }
                 tracks[i] = track;
                 size++;
+                return true;
             }
         }   
         
-        return true;
+        
     }
      
     /** Removes the track in the given index from this list.
