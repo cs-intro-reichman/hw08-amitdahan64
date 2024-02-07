@@ -98,7 +98,17 @@ class PlayList {
     public boolean add(int i, Track track) {
         //// replace the following statement with your code
         if(i == 0){
-            tracks[0] = track;
+            if(size != 0){
+                for(int j = size; j > 0 ; j--){
+                    tracks[j] = tracks[j-1];
+                }
+                tracks[0] = track;
+
+            }
+            else{
+                tracks[0] = track;
+            }
+            
             size++;
             return true;
         }
