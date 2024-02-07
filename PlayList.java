@@ -98,8 +98,8 @@ class PlayList {
     public boolean add(int i, Track track) {
         //// replace the following statement with your code
         if(i == 0){
-            add(track);
-            return true;
+            
+            return add(track);
         }
         else {
             if(i < 0 || size == maxSize || i > maxSize){return false;} 
